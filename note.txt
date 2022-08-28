@@ -1,0 +1,13 @@
+New project 
+
+*   dotnet new mvc -n ProductManager -o ProductManager
+    code ProductManager
+
+* Extention:
+
+Build and Run:
+    dotnet build
+    dotnet run
+
+file task :
+    
