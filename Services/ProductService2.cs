@@ -13,10 +13,35 @@ namespace ProductManager.Services
         {
             _context = context;
         }
+
+        public void CreateProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteProduct(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Category> GetCategories()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Product GetProductByID(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Product> GetProducts()
         {
             return _context.Products.OrderByDescending(x => x.Id).ToList();
         }
 
+        public void UpdateProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

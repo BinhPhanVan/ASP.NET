@@ -21,8 +21,8 @@ services.AddDbContext<DataContext>(
 );
 // services.AddSingleton<IProductService, ProductService>();
 // services.AddScoped<IProductService, ProductService>();
-services.AddTransient<IProductService, ProductService2>();
- 
+services.AddTransient<IProductService, ProductService>();
+services.AddTransient<ICategoryService, CategoryService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
