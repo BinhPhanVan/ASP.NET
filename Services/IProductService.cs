@@ -9,5 +9,13 @@ namespace ProductManager.Services
     public interface IProductService
     {
         List<Product> GetProducts();
+
+        Product? GetProductByID(int id);
+
+        void CreateProduct(Product product);
+
+        void UpdateProduct(Product product);
+        void DeleteProduct(int id);
+        List<Category> GetCategories();
     }
 }
